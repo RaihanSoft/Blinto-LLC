@@ -1,0 +1,125 @@
+/* Reset & Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: #fff;
+    position: relative;
+}
+
+/* Logo */
+.logo img {
+    width: 109px;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #475569;
+    font-weight: 700;
+    transition: color 0.3s ease-in-out;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #4F46E5;
+}
+
+/* Buttons */
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.signup {
+    border: 1px solid #4F46E5;
+    color: #4F46E5;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 1234px;
+}
+
+.signup:hover {
+    background: #4F46E5;
+    color: #fff;
+}
+
+.login {
+    background: #4F46E5;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 1234px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 123rem;
+    padding: 0.5rem;
+}
+
+.hamburger img {
+    width: 24px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: top 0.3s ease-in-out;
+    display: none;
+}
+
+/* Show menu when active */
+.mobile-menu.active {
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: #475569;
+    font-weight: 700;
+    padding: 10px;
+    display: block;
+}
