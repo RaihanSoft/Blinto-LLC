@@ -123,3 +123,68 @@ nav {
     padding: 10px;
     display: block;
 }
+
+
+/*! hero section starts from here  */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #ffffff, #3b82f6);
+    /* background : radial-gradient(circle farthest-side at 100% 100%, #3b82f6, #3b82f608 49%), */
+    /* background : radial-gradient(circle farthest-side at 50% 100%, #a855f7, #a855f700 48%); */
+    
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.subheading {
+    font-size: 14px;
+    font-weight: 600;
+    color: #6a6a6a;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #111;
+}
+
+.hero p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.app-buttons img {
+    width: 140px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.hero-image {
+    position: relative;
+    margin-top: 40px;
+}
+
+.hero-image img {
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image .mobile-overlay {
+    position: absolute;
+    right: 20px;
+    bottom: -30px;
+    width: 200px;
+    border-radius: 10px;
+}

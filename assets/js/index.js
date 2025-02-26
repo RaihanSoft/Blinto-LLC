@@ -1,3 +1,4 @@
+//! Navbar Mobile Menu Functionality (Hamburger Button)
 document.addEventListener("DOMContentLoaded", function () {
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".mobile-menu");
@@ -14,3 +15,5 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+// ! hero section starts from here  
