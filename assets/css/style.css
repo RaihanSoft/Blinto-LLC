@@ -132,7 +132,6 @@ nav {
 
 /*! hero section starts from here  */
 
-/* Hero Section */
 .hero {
     display: flex;
     justify-content: center;
@@ -140,8 +139,6 @@ nav {
     text-align: center;
     /* min-height: 100vh; */
     padding: 130px 0px 20px 0px;
-
-
     background: linear-gradient(180deg, #ffffff, #eef1ff);
 
 }
@@ -294,6 +291,10 @@ nav {
     /* Vertical Center */
     text-align: center;
     /* Text center */
+}
+.uber{
+    padding: 20px;
+   
 }
 
 
