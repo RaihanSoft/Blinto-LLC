@@ -185,6 +185,127 @@
         </section>
 
 
+        <section class="section_audience">
+            <div class="audience_wrapper">
+                <div class="audience_tabs">
+                    <div class="audience_tabs-menu">
+                        <div class="audience_tab active" onclick="showTab(1)">
+                            <h3>Lazy Entrepreneurs (LEs)</h3>
+                            <p>Let’s turn that million into a billion with a big B. Grind, automate, scale — all while
+                                lounging on the couch.</p>
+                        </div>
+                        <div class="audience_tab" onclick="showTab(2)">
+                            <h3>Coding Coach Potatoes (CCPs™)</h3>
+                            <p>For dev neets who haven't seen sunlight in months 🌞. SlothUI makes MVP building easier
+                                than ordering pizza.</p>
+                        </div>
+                        <div class="audience_tab" onclick="showTab(3)">
+                            <h3>Design Procrastinators (DPs)</h3>
+                            <p>"I'll do it later" mindsets? We make them award-winning designs by default. Gen Z mode:
+                                ON.</p>
+                        </div>
+                    </div>
+
+                    <div class="audience_tabs-content">
+                        <img src="https://cdn.prod.website-files.com/662c8f5868c6566dc279808a/662e26ecbeab55128d95cc67_audience-1.webp"
+                            id="tabImage" alt="Audience Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            .section_audience {
+                background: #F6F7FB;
+                padding: 100px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+
+            .audience_wrapper {
+                display: flex;
+                max-width: 100%;
+                width: 100%;
+                gap: 5rem;
+                justify-content: space-between;
+                padding: 0 100px;
+            }
+
+            .audience_tabs {
+                display: flex;
+                width: 100%;
+                gap: 5rem;
+            }
+
+            .audience_tabs-menu {
+                display: flex;
+                flex-direction: column;
+                gap: 2.5rem;
+                width: 40%;
+            }
+
+            .audience_tab {
+                padding: 2rem;
+                border-left: 4px solid rgba(103, 80, 164, 0.1);
+                transition: all 0.3s ease;
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .audience_tab:hover {
+                background: rgba(103, 80, 164, 0.05);
+            }
+
+            .audience_tab.active {
+                border-left: 4px solid #6750A4;
+                background: rgba(103, 80, 164, 0.1);
+            }
+
+            .audience_tabs-content {
+                width: 60%;
+                border-radius: 2rem;
+                overflow: hidden;
+                display: flex;
+                transition: opacity 0.5s ease-in-out;
+            }
+
+            .audience_tabs-content img {
+                width: 100%;
+                object-fit: cover;
+                border-radius: 2rem;
+            }
+        </style>
+
+        <script>
+            function showTab(tab) {
+                const tabs = document.querySelectorAll('.audience_tab');
+                const images = [
+                    "https://cdn.prod.website-files.com/662c8f5868c6566dc279808a/662e26ecbeab55128d95cc67_audience-1.webp",
+                    "https://cdn.prod.website-files.com/662c8f5868c6566dc279808a/662e26ec0acef96920e4e47d_audience-2.jpg",
+                    "https://cdn.prod.website-files.com/662c8f5868c6566dc279808a/662e26eca8fcecc7a0052a1c_audience-3.webp"
+                ];
+
+                tabs.forEach((t, index) => {
+                    t.classList.remove('active');
+                    if (index === tab - 1) {
+                        t.classList.add('active');
+                    }
+                });
+
+                const img = document.getElementById("tabImage");
+                img.style.opacity = 0;
+                setTimeout(() => {
+                    img.src = images[tab - 1];
+                    img.style.opacity = 1;
+                }, 300);
+            }
+        </script>
+
+
 
     </main>
 
