@@ -137,7 +137,15 @@ nav {
     padding: 60px 0px 20px 0px;
 
     background: linear-gradient(180deg, #ffffff, #eef1ff);
+    
 }
+
+.shadow {
+    transition: all 0.8s ease-in-out;
+    opacity: 0;
+  }
+  
+
 
 .hero-content {
     max-width: 700px;
@@ -151,7 +159,7 @@ nav {
     margin-bottom: 10px;
     background: #eef1ff;
     padding: 5px 15px;
-    border-radius:1234px;
+    border-radius: 1234px;
 
 }
 
@@ -190,32 +198,66 @@ nav {
     transform: scale(1.05);
 }
 
-/* Responsive Breakpoints */
-@media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 36px;
-    }
+/*! hero section image part  */
 
-    .hero-content .app-buttons img {
-        width: 130px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-content h1 {
-        font-size: 28px;
-    }
-
-    .hero-content p {
-        font-size: 14px;
-    }
-    .hero{
-        padding: 60px 8px 20px 8px;
-
-    }
+            /* banner-image Section */
+            .banner-image {
+                display: flex;
+                justify-content: center;
+                padding-right: 300px;
+                align-items: center;
+                padding: 30px 0px 100px 0px;
+                /* background: linear-gradient(180deg, #eef1ff 0%, #cfd9ff 100%); */
+                background: linear-gradient(180deg, #eef1ff 5%, #a5b4fc 100%);
+                position: relative;
+                overflow: hidden;
+                margin-left: -130px;
 
 
-    .hero-content .app-buttons img {
-        width: 120px;
-    }
-}
+
+
+            }
+
+            .banner-image-content {
+                position: relative;
+                max-width: 1100px;
+                width: 100%;
+                text-align: center;
+
+            }
+
+            .desktop-image img {
+                width: 800px;
+                height: 533.33px;
+                border-radius: 16px;
+                max-width: 900px;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+                transition: transform 0.3s ease;
+                border-bottom: 10px solid transparent;
+                border-left: 10px solid transparent;
+
+            }
+
+            .mobile-image {
+                position: absolute;
+                right: 0;
+                bottom: -50px;
+
+                /* Image niche theke uthe asbe */
+                width: 250px;
+            }
+
+            .mobile-image img {
+                width: 230px;
+                height: 467.85px;
+                border-radius: 20px;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+                transition: transform 0.3s ease;
+                border: 2px solid transparent;
+
+            }
+
+            .desktop-image img:hover,
+            .mobile-image img:hover {
+                transform: translateY(-10px);
+            }

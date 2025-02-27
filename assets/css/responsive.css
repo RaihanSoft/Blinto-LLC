@@ -30,3 +30,68 @@
 
 
 /*! hero section starts from here  */
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content .app-buttons img {
+        width: 130px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 60px 8px 20px 8px;
+
+    }
+
+
+    .hero-content .app-buttons img {
+        width: 120px;
+    }
+}
+
+/*! hero section image part  */
+
+@media (max-width: 768px) {
+    .desktop-image img {
+        width: 90%;
+
+    }
+
+
+    .mobile-image {
+        /* position: static; */
+        /* Absolute remove */
+        margin-top: 20px;
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .mobile-image {
+        width: 80%;
+    }
+
+    .desktop-image img {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 1000px) {
+    .banner-image {
+        margin-left: 0;
+    }
+}
