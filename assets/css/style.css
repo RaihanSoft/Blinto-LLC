@@ -217,8 +217,6 @@ nav {
     margin-left: -130px;
 
 
-
-
 }
 
 .banner-image-content {
@@ -292,9 +290,10 @@ nav {
     text-align: center;
     /* Text center */
 }
-.uber{
+
+.uber {
     padding: 20px;
-   
+
 }
 
 
@@ -307,4 +306,95 @@ nav {
     transition: filter 0.3s ease;
     filter: grayscale(0%);
 
+}
+
+/* !Our Primary Features section */
+
+.features {
+    padding: 50px 20px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.features-header {
+    margin-bottom: 50px;
+    padding: 30px;
+    display: inline-block;
+}
+
+.features-header span {
+    display: inline-block;
+    background-color: #EEF2FF;
+    color: #4F46E5;
+    padding: 5px 20px;
+    border-radius: 1234px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+
+}
+
+.features-header h2 {
+    font-size: 36px;
+    margin: 10px 0;
+    font-weight: 800;
+    color: #1E293B;
+}
+
+.features-header p {
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    justify-content: center;
+    padding: 0px 50px 50px 50px;
+    margin-top: -20px;
+}
+
+.feature-item {
+    padding: 30px;
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+.feature-item:hover {
+    background: #cfd9ff;
+    color: #6c63ff;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
+}
+
+.feature-item .icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #6c63ff;
+    transition: 0.3s ease-in-out;
+}
+
+.feature-item:hover .icon {
+    color: white;
+}
+
+.feature-item h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.feature-item p {
+    color: #666;
+    font-size: 16px;
+}
+
+.feature-item:hover p {
+    color: #6c63ff;
 }

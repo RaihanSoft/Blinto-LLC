@@ -114,3 +114,23 @@
         gap: 20px;
     }
 }
+
+/* !Our Primary Features section */
+@media (max-width: 768px) {
+    .features-header h2 {
+        font-size: 21px;
+    }
+
+    .features-header p {
+        font-size: 14px;
+    }
+
+    .features-grid {
+        padding: 20px;
+        margin-top: -50px;
+    }
+
+    .feature-item {
+        padding: 10px;
+    }
+}
