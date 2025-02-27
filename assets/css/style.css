@@ -355,8 +355,10 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
+    max-width: 1200px ;
+    margin: 0 auto;
     justify-content: center;
-    padding: 0px 50px 50px 50px;
+    padding: 0px 50px 20px 50px;
     margin-top: -20px;
 }
 
@@ -374,7 +376,7 @@ nav {
 }
 
 .feature-item .icon {
-    font-size: 50px;
+    width: 50px;
     margin-bottom: 20px;
     color: #6c63ff;
     transition: 0.3s ease-in-out;
@@ -397,4 +399,81 @@ nav {
 
 .feature-item:hover p {
     color: #6c63ff;
+}
+
+/* !Our Achievements  */
+.stats {
+    padding: 100px 20px;
+    text-align: center;
+    background: #F8FAFC;
+}
+
+.stats-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.stats-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 20px;
+    background: rgba(79, 70, 229, 0.1);
+    border-radius: 50%;
+}
+
+.stats-icon img {
+    width: 22px;
+    height: 22.75px;
+}
+
+.stats h2 {
+    font-size: 36px;
+    color: #1E293B;
+    margin-bottom: 10px;
+    font-weight: 800;
+    line-height: 44px;
+    
+}
+
+
+.stats p {
+    font-size: 18px;
+    color: #475569;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    line-height: 32px;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 60px;
+    color: #4F46E5;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.stat-item span {
+    font-size: 16px;
+    color: #475569;
+    font-weight: 700;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 70px;
+    background: #CBD5E1;
 }

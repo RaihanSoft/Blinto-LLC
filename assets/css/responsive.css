@@ -134,3 +134,30 @@
         padding: 10px;
     }
 }
+
+/* !Our Achievements  */
+@media (max-width: 768px) {
+    .stats h2 {
+        font-size: 28px;
+    }
+
+    .stats p {
+        font-size: 16px;
+    }
+
+    .stats-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .stat-divider {
+        width: 250px;
+        height: 1px;
+        /* Horizontal Line */
+        background: #CBD5E1;
+        margin: 20px auto;
+        display: block;
+        /* Divider Show */
+    }
+}
