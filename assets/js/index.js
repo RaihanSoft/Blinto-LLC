@@ -16,4 +16,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// ! hero section starts from here  
+

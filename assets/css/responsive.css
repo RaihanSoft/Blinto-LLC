@@ -95,3 +95,20 @@
         margin-left: 0;
     }
 }
+
+/*! brands section */
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+    .brands-content {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .brands-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}

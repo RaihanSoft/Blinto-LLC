@@ -13,8 +13,13 @@ nav {
     align-items: center;
     padding: 15px 5%;
     background: #fff;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+
+
 }
+
 
 /* Logo */
 .logo img {
@@ -134,17 +139,18 @@ nav {
     align-items: center;
     text-align: center;
     /* min-height: 100vh; */
-    padding: 60px 0px 20px 0px;
+    padding: 130px 0px 20px 0px;
+
 
     background: linear-gradient(180deg, #ffffff, #eef1ff);
-    
+
 }
 
 .shadow {
     transition: all 0.8s ease-in-out;
     opacity: 0;
-  }
-  
+}
+
 
 
 .hero-content {
@@ -200,64 +206,104 @@ nav {
 
 /*! hero section image part  */
 
-            /* banner-image Section */
-            .banner-image {
-                display: flex;
-                justify-content: center;
-                padding-right: 300px;
-                align-items: center;
-                padding: 30px 0px 100px 0px;
-                /* background: linear-gradient(180deg, #eef1ff 0%, #cfd9ff 100%); */
-                background: linear-gradient(180deg, #eef1ff 5%, #a5b4fc 100%);
-                position: relative;
-                overflow: hidden;
-                margin-left: -130px;
+/* banner-image Section */
+.banner-image {
+    display: flex;
+    justify-content: center;
+    padding-right: 300px;
+    align-items: center;
+    padding: 30px 0px 120px 0px;
+    /* background: linear-gradient(180deg, #eef1ff 0%, #cfd9ff 100%); */
+    background: linear-gradient(180deg, #eef1ff 5%, #a5b4fc 100%);
+    position: relative;
+    overflow: hidden;
+    margin-left: -130px;
 
 
 
 
-            }
+}
 
-            .banner-image-content {
-                position: relative;
-                max-width: 1100px;
-                width: 100%;
-                text-align: center;
+.banner-image-content {
+    position: relative;
+    max-width: 1100px;
+    width: 100%;
+    text-align: center;
 
-            }
+}
 
-            .desktop-image img {
-                width: 800px;
-                height: 533.33px;
-                border-radius: 16px;
-                max-width: 900px;
-                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-                transition: transform 0.3s ease;
-                border-bottom: 10px solid transparent;
-                border-left: 10px solid transparent;
+.desktop-image img {
+    width: 800px;
+    height: 533.33px;
+    border-radius: 16px;
+    max-width: 900px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
 
-            }
+}
 
-            .mobile-image {
-                position: absolute;
-                right: 0;
-                bottom: -50px;
+.mobile-image {
+    position: absolute;
+    right: 0;
+    bottom: -50px;
 
-                /* Image niche theke uthe asbe */
-                width: 250px;
-            }
+    /* Image niche theke uthe asbe */
+    width: 250px;
+}
 
-            .mobile-image img {
-                width: 230px;
-                height: 467.85px;
-                border-radius: 20px;
-                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-                transition: transform 0.3s ease;
-                border: 2px solid transparent;
+.mobile-image img {
+    width: 230px;
+    height: 467.85px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    border: 2px solid transparent;
 
-            }
+}
 
-            .desktop-image img:hover,
-            .mobile-image img:hover {
-                transform: translateY(-10px);
-            }
+.desktop-image img:hover,
+.mobile-image img:hover {
+    transform: translateY(-10px);
+}
+
+/*! brands section */
+/* Brands Section */
+.brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background: #f8f9fc;
+
+}
+
+.brands-content {
+    display: flex;
+    /* Grid er bodole Flex */
+    flex-wrap: wrap;
+    /* Line break hobe jodi sob image ek line e na ase */
+    gap: 40px;
+    /* Image er majhe gap */
+    max-width: 1100px;
+    width: 100%;
+    justify-content: center;
+    /* Horizontal Center */
+    align-items: center;
+    /* Vertical Center */
+    text-align: center;
+    /* Text center */
+}
+
+
+.brands-content img {
+    max-width: 100%;
+
+    height: auto;
+
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    filter: grayscale(0%);
+
+}
