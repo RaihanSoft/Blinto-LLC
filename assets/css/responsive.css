@@ -244,9 +244,105 @@
         padding: 0 20px;
     }
 }
+
 /* !testimonial  */
 @media (max-width: 768px) {
     .testimonial-header h2 {
         font-size: 2rem;
     }
+}
+
+/* !faq section */
+@media (max-width: 768px) {
+    .faq-title {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .faq-content {
+        padding: 15px;
+    }
+
+    .faq-section p {
+        width: 100%;
+    }
+}
+
+.faq-title:active+.faq-content {
+    display: block;
+}
+
+/* Download The App  */
+@media (max-width: 992px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .btn-outline {
+        padding: 10px 8px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 20px;
+        font-weight: 800;
+        color: #1E293B;
+    }
+
+    .btn-primary {
+        padding: 10px 8px;
+        font-size: 14px;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .main-image {
+        max-width: 245px;
+        height: 415px;
+
+    }
+
+
+    .small-image {
+        max-width: 245px;
+        height: 415px;
+        margin-top: 20px;
+
+    }
+
+
+
+
+    .main-image {
+        margin: 0 auto;
+    }
+
+    .small-image {
+        position: relative;
+        right: 0;
+        top: -50px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 692px) {
+
+
+    .small-image {
+        max-width: 145px;
+        height: 315px;
+        margin-top: 20px;
+
+    }
+
+    .main-image {
+        max-width: 145px;
+        height: 315px;
+
+    }
+
+
 }

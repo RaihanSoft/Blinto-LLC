@@ -43,3 +43,11 @@ function showTab(tab) {
         img.style.opacity = 1;
     }, 300);
 }
+
+
+document.querySelectorAll('.faq-title').forEach((faq) => {
+    faq.onclick = () => {
+        faq.parentElement.classList.toggle('active');
+    };
+});
+// faq secttion 

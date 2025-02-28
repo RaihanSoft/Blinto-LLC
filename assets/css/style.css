@@ -788,3 +788,190 @@ nav {
     font-size: 14px;
     line-height: 1.6;
 }
+
+/* ! faq section  */
+.faq-section {
+    text-align: center;
+    padding: 70px 20px;
+    background: #F8FAFC;
+
+}
+
+.badge {
+    display: inline-block;
+    background: #EEF2FF;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #4F46E5;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.faq-section h2 {
+    font-size: 36px;
+    color: #121212;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.faq-section p {
+    font-size: 18px;
+    color: #656565;
+    margin-bottom: 40px;
+    font-weight: 400;
+    line-height: 28.8px;
+    width: 700px;
+    margin: 0 auto;
+
+}
+
+.faq-title span {
+    display: flex;
+    gap: 10px;
+}
+
+.faq-title img {
+    width: 20px;
+    height: 20px;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.faq-card {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #E5E7EB;
+
+    overflow: hidden;
+}
+
+.faq-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ;
+    padding: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #121212;
+    font-size: 18px;
+}
+
+.faq-content {
+    padding: 20px;
+    background: #f6f6f9;
+    display: none;
+    color: #656565;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: start;
+}
+
+.faq-card.active .faq-content {
+    display: block;
+}
+
+.faq-card.active .icon {
+    transform: rotate(180deg);
+}
+
+.icon {
+    transition: 0.3s ease;
+}
+
+/* Download The App  */
+.download-app {
+    padding: 100px 50px;
+    background: #F4F6FD;
+}
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.text {
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1E293B;
+}
+
+p {
+    margin: 20px 0;
+    font-size: 16px;
+    color: #64748B;
+    font-weight: 700;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-outline {
+    padding: 10px 25px;
+    border: 1px solid #4F46E5;
+    color: #4F46E5;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: #4F46E5;
+    color: white;
+}
+
+.btn-primary {
+    padding: 10px 25px;
+    background: #4F46E5;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #3B31C5;
+}
+
+.images {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.main-image {
+    max-width: 350px;
+    border-radius: 20px;
+    margin-right: 130px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px;
+}
+
+.small-image {
+    width: 250px;
+    border-radius: 20px;
+    position: absolute;
+    right: -80px;
+    top: -100px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
