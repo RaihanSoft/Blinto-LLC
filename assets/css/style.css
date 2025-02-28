@@ -355,7 +355,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
-    max-width: 1200px ;
+    max-width: 1200px;
     margin: 0 auto;
     justify-content: center;
     padding: 0px 50px 20px 50px;
@@ -435,7 +435,7 @@ nav {
     margin-bottom: 10px;
     font-weight: 800;
     line-height: 44px;
-    
+
 }
 
 
@@ -476,4 +476,155 @@ nav {
     width: 1px;
     height: 70px;
     background: #CBD5E1;
+}
+
+
+/*! Who is it for? */
+
+
+.section_audience {
+    /* background: #F6F7FB; */
+    padding: 0 0 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.new-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Text left-side এ রাখবে */
+    text-align: left;
+    gap: 1.5rem;
+    max-width: 1400px;
+    /* .audience_wrapper এর max-width এর সাথে match */
+    margin: 0 auto;
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+.new-header span {
+    display: inline-block;
+    background-color: #EEF2FF;
+    color: #4F46E5;
+    padding: 5px 10px;
+    border-radius: 1234px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-top: 80px;
+}
+
+.new-header h2 {
+    font-weight: 800;
+    font-size: 32px;
+    color: #1E293B;
+
+}
+
+.new-header p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #475569;
+    max-width: 70%;
+
+}
+
+@media (max-width: 1200px) {
+    .new-header {
+        padding: 0 50px;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .new-header {
+        padding: 0 30px;
+
+    }
+
+    .new-header p {
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .new-header {
+        padding: 0 20px;
+    }
+}
+
+.audience_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 100px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+
+.audience_wrapper {
+    display: flex;
+    max-width: 1400px;
+    width: 100%;
+    gap: 5rem;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.audience_tabs {
+    display: flex;
+    width: 100%;
+    gap: 5rem;
+}
+
+.audience_tabs-menu {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    width: 40%;
+}
+
+.audience_tab {
+    padding: 1.5rem;
+    border-left: 4px solid rgba(103, 80, 164, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.audience_tab:hover {
+    background: rgba(103, 80, 164, 0.05);
+}
+
+.audience_tab.active {
+    border-left: 4px solid #4F46E5;
+    background: rgba(103, 80, 164, 0.1);
+}
+
+.audience_tabs-content {
+    width: 592px;
+    height: 452px;
+    border-radius: 2rem;
+    overflow: hidden;
+    display: flex;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.audience_tabs-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
 }

@@ -19,3 +19,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+// Who is it for?
+function showTab(tab) {
+    const tabs = document.querySelectorAll('.audience_tab');
+    const images = [
+        "https://cdn.prod.website-files.com/662c8f5868c6566dc279808a/662e26ecbeab55128d95cc67_audience-1.webp",
+        "https://cdn.prod.website-files.com/662c8f5868c6566dc279808a/662e26ec0acef96920e4e47d_audience-2.jpg",
+        "https://cdn.prod.website-files.com/662c8f5868c6566dc279808a/662e26eca8fcecc7a0052a1c_audience-3.webp"
+    ];
+
+    tabs.forEach((t, index) => {
+        t.classList.remove('active');
+        if (index === tab - 1) {
+            t.classList.add('active');
+        }
+    });
+
+    const img = document.getElementById("tabImage");
+    img.style.opacity = 0;
+    setTimeout(() => {
+        img.src = images[tab - 1];
+        img.style.opacity = 1;
+    }, 300);
+}
