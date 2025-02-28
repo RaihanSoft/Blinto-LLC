@@ -957,21 +957,25 @@ p {
     align-items: center;
     width: 100%;
     gap: 30px;
+   
 }
 
 .main-image {
     max-width: 350px;
     border-radius: 20px;
-    margin-right: 130px;
+    margin-right: 180px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     margin-bottom: 100px;
+   
+
 }
 
 .small-image {
     width: 250px;
     border-radius: 20px;
     position: absolute;
-    right: -80px;
+    right: -40px;
     top: -100px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
 }

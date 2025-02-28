@@ -482,15 +482,232 @@
                 </div>
             </div>
         </section>
-
-
         <!-- Let’s Download App section ends here -->
 
 
     </main>
 
+    <footer>
+        <div class="footer">
+            <div class="footer-section">
+                <h3>Site Map</h3>
+                <ul>
+                    <li>Homepage</li>
+                    <li>Product</li>
+                    <li>Services</li>
+                    <li>Technology</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li>Service Lineup 1</li>
+                    <li>Service Lineup 2</li>
+                    <li>Service Lineup 3</li>
+                    <li>Service Lineup 4</li>
+                    <li>Service Lineup 5</li>
+                    <li>Service Lineup 6</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Product</h3>
+                <ul>
+                    <li>Product Lineup 1</li>
+                    <li>Product Lineup 2</li>
+                    <li>Product Lineup 3</li>
+                    <li>Product Lineup 4</li>
+                    <li>Product Lineup 5</li>
+                    <li>Product Lineup 6</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Help & Support</h3>
+                <ul>
+                    <li>Live Chat</li>
+                    <li>Email Support</li>
+                    <li>Product Refund</li>
+                    <li>Submit Feedback</li>
+                    <li>Help Ticket</li>
+                    <li>Call Center</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>HIPAA Notice</li>
+                    <li>Data Policy</li>
+                    <li>AI Privacy</li>
+                    <li>Terms & Conditions</li>
+                    <li>Lawyer's Corner</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Pricing</h3>
+                <ul>
+                    <li>Pricing Tier 1</li>
+                    <li>Pricing Tier 2</li>
+                    <li>Pricing Tier 3</li>
+                    <li>Pricing Tier 4</li>
+                    <li>Pricing Tier 5</li>
+                    <li>Pricing Tier 6</li>
+                </ul>
+            </div>
+        </div>
 
-    <footer></footer>
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <img src="/assets/image/logo.png" alt="">
+            </div>
+
+            <div class="scroll-btn"><img src="/assets/image/Vector (9).png" alt=""></div>
+            <div class="footer-copy">Copyright 2028 slothUI, All Rights Reserved.</div>
+
+        </div>
+    </footer>
+
+    <style>
+        footer {
+            background: #f7f8fc;
+            padding: 40px 0 60px;
+            text-align: center;  
+            margin-top: -270px;
+            position: relative;
+        }
+
+        .footer {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            max-width: 1200px;
+            margin: auto;
+            gap: 40px;
+            padding-bottom: 40px;
+         
+        }
+
+        .footer-section h3 {
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #212529;
+         
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+           
+        }
+
+        .footer-section ul li {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+           
+        }
+
+        .footer-section ul li:hover {
+            color: #007bff;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #e4e4e4;
+            padding-top: 20px;
+            flex-wrap: wrap;
+            max-width: 1120px;
+            margin: 0 auto;
+        }
+
+
+
+        .footer-logo img {
+            width: 109px;
+
+
+        }
+
+        .footer-copy {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .scroll-btn {
+            width: 40px;
+            height: 40px;
+
+            border: 1px solid black;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .scroll-btn:hover {
+            background: #007bff;
+            color: white;
+        }
+
+        @media (max-width: 1024px) {
+            .footer {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .footer {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .footer-bottom {
+
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+
+            }
+
+        }
+
+        @media (max-width: 480px) {
+            .footer {
+                grid-template-columns: 1fr;
+
+                text-align: center;
+            }
+            footer {
+                margin-top: -80px;
+            }
+            .footer-section h3 {
+                text-align: start;
+                padding-left: 20px;
+                
+            }         
+               .footer-section ul {
+                text-align: start;
+                padding-left: 20px;
+            }
+        }
+    </style>
+
+    <script>
+        document.querySelector(".scroll-btn").onclick = () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+    </script>
+
+
     <script src="/assets/js/index.js"></script>
 </body>
 
