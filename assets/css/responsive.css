@@ -244,3 +244,9 @@
         padding: 0 20px;
     }
 }
+/* !testimonial  */
+@media (max-width: 768px) {
+    .testimonial-header h2 {
+        font-size: 2rem;
+    }
+}

@@ -23,10 +23,11 @@ document.addEventListener("DOMContentLoaded", function () {
 function showTab(tab) {
     const tabs = document.querySelectorAll('.audience_tab');
     const images = [
+        "https://i.ibb.co.com/ym6gwJRy/Frame-1.png",
         "https://cdn.prod.website-files.com/662c8f5868c6566dc279808a/662e26ecbeab55128d95cc67_audience-1.webp",
-        "https://cdn.prod.website-files.com/662c8f5868c6566dc279808a/662e26ec0acef96920e4e47d_audience-2.jpg",
         "https://cdn.prod.website-files.com/662c8f5868c6566dc279808a/662e26eca8fcecc7a0052a1c_audience-3.webp"
     ];
+
 
     tabs.forEach((t, index) => {
         t.classList.remove('active');
