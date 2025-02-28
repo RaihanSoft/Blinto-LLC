@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/responsive.css">
     <link rel="stylesheet" href="/assets/css/animation.css">
+    <link rel="shortcut icon" href="/assets/image/fav.jpg" type="image/x-icon">
     <title>slothUi</title>
     <!-- font family  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,9 +21,11 @@
     <header>
         <!-- navbar starts here  -->
         <nav>
+
             <div class="logo">
-                <img src="/assets/image/logo.png" alt="SlothUI Logo">
+                <img  src="/assets/image/logo.png" alt="SlothUI Logo">
             </div>
+
 
             <!-- Desktop Menu -->
             <ul class="nav-links">
@@ -49,7 +52,7 @@
                 <a href="#testimonials">Testimonials</a>
                 <a href="#faq">FAQ</a>
                 <a href="#signup" class="btn signup">Sign Up</a>
-                <a href="#login" class="btn login">Log In</a>
+                <a href="#login"  class="btn login">Log In</a>
             </div>
         </nav>
         <!-- navbar starts here  -->
@@ -107,7 +110,7 @@
         <!-- brands section end -->
 
         <!-- Our Primary Features start -->
-        <section class="features">
+        <section id="features" class="features">
             <div class="features-header">
                 <span>Our Main Features</span>
                 <h2>Our Primary Features</h2>
@@ -154,7 +157,7 @@
         <!-- Our Primary Features end -->
 
         <!-- !Our Achievements section start   -->
-        <section class="stats">
+        <section id="achievements" class="stats">
             <div class="stats-container">
                 <div class="stats-icon">
                     <img src="/assets/image/icons/Vector (6).png" alt="icon">
@@ -238,7 +241,7 @@
         <!-- Who is it for secion end -->
 
         <!-- Testimonials section start -->
-        <section class="main-testimonial">
+        <section id="testimonials" class="main-testimonial">
             <div class="testimonial">
                 <div class="testimonial-header">
                     <span>Testimonials</span>
@@ -318,6 +321,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="testimonial-card">
                         <div class="stars">★★★★☆</div>
                         <p>Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus.</p>
@@ -355,6 +359,8 @@
                     </div>
 
                 </div>
+
+                <button class="load-more-btn">Load More <span style="font-size: 20px;" >+</span> </button>
             </div>
         </section>
         <!-- Testimonials sectoin end -->
@@ -394,7 +400,7 @@
         <!-- Our Office section end -->
 
         <!-- FAQ section start -->
-        <section class="faq-section">
+        <section id="faq" class="faq-section">
             <span class="badge">FAQ</span>
             <h2>Frequently Asked Questions</h2>
             <p>Fermentum iaculis eu non diam phasellus vestibulum. Volutpat commodo sed egestas egestas fringilla
@@ -486,7 +492,7 @@
 
 
     </main>
-
+    <!-- footer section starts here  -->
     <footer>
         <div class="footer">
             <div class="footer-section">
@@ -567,145 +573,8 @@
 
         </div>
     </footer>
+    <!-- footer section ends here  -->
 
-    <style>
-        footer {
-            background: #f7f8fc;
-            padding: 40px 0 60px;
-            text-align: center;  
-            margin-top: -270px;
-            position: relative;
-        }
-
-        .footer {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            max-width: 1200px;
-            margin: auto;
-            gap: 40px;
-            padding-bottom: 40px;
-         
-        }
-
-        .footer-section h3 {
-            font-weight: 600;
-            font-size: 16px;
-            margin-bottom: 20px;
-            color: #212529;
-         
-        }
-
-        .footer-section ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-           
-        }
-
-        .footer-section ul li {
-            font-size: 14px;
-            color: #555;
-            margin-bottom: 10px;
-            cursor: pointer;
-            transition: 0.3s;
-           
-        }
-
-        .footer-section ul li:hover {
-            color: #007bff;
-        }
-
-        .footer-bottom {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-top: 1px solid #e4e4e4;
-            padding-top: 20px;
-            flex-wrap: wrap;
-            max-width: 1120px;
-            margin: 0 auto;
-        }
-
-
-
-        .footer-logo img {
-            width: 109px;
-
-
-        }
-
-        .footer-copy {
-            color: #777;
-            font-size: 14px;
-        }
-
-        .scroll-btn {
-            width: 40px;
-            height: 40px;
-
-            border: 1px solid black;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .scroll-btn:hover {
-            background: #007bff;
-            color: white;
-        }
-
-        @media (max-width: 1024px) {
-            .footer {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .footer {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 20px;
-            }
-
-            .footer-bottom {
-
-                flex-direction: column;
-                gap: 15px;
-                text-align: center;
-
-            }
-
-        }
-
-        @media (max-width: 480px) {
-            .footer {
-                grid-template-columns: 1fr;
-
-                text-align: center;
-            }
-            footer {
-                margin-top: -80px;
-            }
-            .footer-section h3 {
-                text-align: start;
-                padding-left: 20px;
-                
-            }         
-               .footer-section ul {
-                text-align: start;
-                padding-left: 20px;
-            }
-        }
-    </style>
-
-    <script>
-        document.querySelector(".scroll-btn").onclick = () => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        };
-    </script>
 
 
     <script src="/assets/js/index.js"></script>

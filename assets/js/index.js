@@ -16,6 +16,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// testimonial  
+document.querySelector('.load-more-btn').addEventListener('click', function () {
+    const cards = document.querySelectorAll('.testimonial-card');
+    cards.forEach((card) => {
+        card.style.display = 'flex';
+    });
+    this.style.display = 'none';
+});
 
 
 
@@ -50,4 +58,14 @@ document.querySelectorAll('.faq-title').forEach((faq) => {
         faq.parentElement.classList.toggle('active');
     };
 });
-// faq secttion 
+
+// in footer
+document.querySelector(".scroll-btn").onclick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+};
+document.querySelector('.logo').addEventListener('click', function () {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
