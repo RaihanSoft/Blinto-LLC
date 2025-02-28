@@ -359,6 +359,200 @@
         </section>
         <!-- Testimonials sectoin end -->
 
+        <!-- Our Office section stars -->
+        <section class="office-section">
+            <span class="badge">Visit Us Anytime</span>
+            <h2>Our Office</h2>
+            <p>You can visit our office anytime but please don't stalk us or don't be creepy.</p>
+
+            <div class="office-grid">
+                <div class="office-card">
+                    <img src="/assets//image/icons/Vector (7).png" class="icon" alt="">
+                    <h3>Japan</h3>
+                    <p>221b Banzai Street<br>Tokyo, TO 77812</p>
+                </div>
+
+                <div class="office-card">
+                    <img src="/assets//image/icons/Vector (7).png" class="icon" alt="">
+                    <h3>USA</h3>
+                    <p>221b Freedom Street<br>New York, NY 21231</p>
+                </div>
+
+                <div class="office-card">
+                    <img src="/assets//image/icons/Vector (7).png" class="icon" alt="">
+                    <h3>Canada</h3>
+                    <p>221b Maple Syrup Street<br>Ottawa, OW 77847</p>
+                </div>
+
+                <div class="office-card">
+                    <img src="/assets//image/icons/Vector (7).png" class="icon" alt="">
+                    <h3>South Korea</h3>
+                    <p>221b Samyang Street<br>Gangnam, GM 22124</p>
+                </div>
+            </div>
+        </section>
+        <!-- Our Office section end -->
+
+        <!-- FAQ section start -->
+        <section class="faq-section">
+            <span class="badge">FAQ</span>
+            <h2>Frequently Asked Questions</h2>
+            <p>Fermentum iaculis eu non diam phasellus vestibulum. Volutpat commodo sed egestas egestas fringilla
+                phasellus.</p>
+
+            <div class="faq-container">
+                <div class="faq-card">
+                    <div class="faq-title">
+                        <span>❓</span> Enim sed faucibus turpis in eu mi bibendum neque egestas?
+                        <i class="icon">⌄</i>
+                    </div>
+                    <div class="faq-content">
+                        Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac.
+                    </div>
+                </div>
+
+                <div class="faq-card">
+                    <div class="faq-title">
+                        <span>❓</span> Amet consectetur adipiscing elit pellentesque habitant morbi tristique?
+                        <i class="icon">⌄</i>
+                    </div>
+                    <div class="faq-content">
+                        Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla malesuada.
+                    </div>
+                </div>
+
+                <div class="faq-card">
+                    <div class="faq-title">
+                        <span>❓</span> Elit pellentesque habitant morbi tristique senectus?
+                        <i class="icon">⌄</i>
+                    </div>
+                    <div class="faq-content">
+                        Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Gravida quis blandit turpis cursus.
+                    </div>
+                </div>
+
+                <div class="faq-card">
+                    <div class="faq-title">
+                        <span>❓</span> Gravida quis blandit turpis cursus in hac. Mi ipsum faucibus vitae aliquet nec?
+                        <i class="icon">⌄</i>
+                    </div>
+                    <div class="faq-content">
+                        Quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque.
+                    </div>
+                </div>
+
+                <div class="faq-card">
+                    <div class="faq-title">
+                        <span>❓</span> Est pellentesque elit ullamcorper dignissim?
+                        <i class="icon">⌄</i>
+                    </div>
+                    <div class="faq-content">
+                        Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <style>
+            .faq-section {
+                text-align: center;
+                padding: 70px 20px;
+                background: #f9f9fb;
+            }
+
+            .badge {
+                display: inline-block;
+                background: #d0caff;
+                padding: 6px 14px;
+                border-radius: 20px;
+                font-size: 14px;
+                color: #6c63ff;
+                margin-bottom: 10px;
+            }
+
+            .faq-section h2 {
+                font-size: 36px;
+                color: #121212;
+                margin-bottom: 10px;
+            }
+
+            .faq-section p {
+                font-size: 16px;
+                color: #656565;
+                margin-bottom: 40px;
+            }
+
+            .faq-container {
+                max-width: 900px;
+                margin: auto;
+            }
+
+            .faq-card {
+                background: #ffffff;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+                margin-bottom: 15px;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+            .faq-title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+                font-weight: bold;
+                cursor: pointer;
+                color: #121212;
+                font-size: 18px;
+            }
+
+            .faq-content {
+                padding: 20px;
+                background: #f6f6f9;
+                display: none;
+                color: #656565;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+
+            .faq-card.active .faq-content {
+                display: block;
+            }
+
+            .faq-card.active .icon {
+                transform: rotate(180deg);
+            }
+
+            .icon {
+                transition: 0.3s ease;
+            }
+
+            @media (max-width: 768px) {
+                .faq-title {
+                    font-size: 16px;
+                    padding: 15px;
+                }
+
+                .faq-content {
+                    padding: 15px;
+                }
+            }
+
+            .faq-title:active+.faq-content {
+                display: block;
+            }
+        </style>
+
+        <script>
+            document.querySelectorAll('.faq-title').forEach((faq) => {
+                faq.onclick = () => {
+                    faq.parentElement.classList.toggle('active');
+                };
+            });
+
+        </script>
+
+        <!-- FAQ section End -->
+
 
     </main>
 
